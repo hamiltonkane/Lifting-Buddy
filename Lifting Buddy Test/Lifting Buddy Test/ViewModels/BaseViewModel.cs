@@ -8,6 +8,8 @@ using Xamarin.Forms;
 using Lifting_Buddy_Test.Models;
 using Lifting_Buddy_Test.Services;
 
+// Start
+
 namespace Lifting_Buddy_Test.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
