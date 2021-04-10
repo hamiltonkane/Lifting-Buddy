@@ -5,7 +5,6 @@ using System.Windows.Input;
 using Lifting_Buddy_Test.Models;
 using Xamarin.Forms;
 
-// changed
 namespace Lifting_Buddy_Test.ViewModels
 {
     public class NewItemViewModel : BaseViewModel

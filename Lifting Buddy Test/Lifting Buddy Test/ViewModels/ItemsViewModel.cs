@@ -21,7 +21,7 @@ namespace Lifting_Buddy_Test.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Workout";
+            Title = "Your Exercises";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
