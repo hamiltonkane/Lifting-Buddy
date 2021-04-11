@@ -12,6 +12,7 @@ namespace Lifting_Buddy_Test.ViewModels
         private string itemId;
         private string text;
         private string description;
+        private string pic;
         public string Id { get; set; }
 
         public string Text
@@ -24,6 +25,12 @@ namespace Lifting_Buddy_Test.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+
+        public string Pic
+        {
+            get => pic;
+            set => SetProperty(ref pic, value);
         }
 
         public string ItemId
@@ -47,6 +54,7 @@ namespace Lifting_Buddy_Test.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
+                pic = item.Pic;
             }
             catch (Exception)
             {

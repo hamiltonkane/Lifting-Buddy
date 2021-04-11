@@ -11,6 +11,7 @@ namespace Lifting_Buddy_Test.ViewModels
     {
         private string text;
         private string description;
+        private string pic;
 
         public NewItemViewModel()
         {
@@ -38,6 +39,12 @@ namespace Lifting_Buddy_Test.ViewModels
             set => SetProperty(ref description, value);
         }
 
+        public string Pic
+        {
+            get => pic;
+            set => SetProperty(ref pic, value);
+        }
+
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
 
@@ -53,7 +60,8 @@ namespace Lifting_Buddy_Test.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
-                Description = Description
+                Description = Description,
+                Pic = Pic
             };
 
             await DataStore.AddItemAsync(newItem);

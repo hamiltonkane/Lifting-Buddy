@@ -21,11 +21,11 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="lift.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,10,0,10" VerticalOptions="FillAndExpand">
+                    <Image Source="lift.png" VerticalOptions="Center" HeightRequest="130" />
+                </ContentView>
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout BackgroundColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
@@ -36,8 +36,10 @@
                            HorizontalOptions="Center" 
                            TextDecorations="Strikethrough"
                            FontSize="Title"/>
-                    <Label Text="Make changes to your lifestyle and become a healthier person with the Lifting Buddy app. Give it a try!" 
+                    <Label Text="Make changes to your lifestyle with the Lifting Buddy app. Start lifting!" 
                            TextColor="White"
+                           HorizontalOptions="Center" 
+                           TextDecorations="Underline"
                            FontSize="16" 
                            Padding="0,0,0,0"/>
                     <Label FontSize="16" 
