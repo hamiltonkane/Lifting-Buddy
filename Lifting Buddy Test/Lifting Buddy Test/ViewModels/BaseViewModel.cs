@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
 using Xamarin.Forms;
-
 using Lifting_Buddy_Test.Models;
 using Lifting_Buddy_Test.Services;
 

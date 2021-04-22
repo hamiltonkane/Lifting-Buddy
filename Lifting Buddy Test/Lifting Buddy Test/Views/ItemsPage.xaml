@@ -21,6 +21,14 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout BackgroundColor="#000000" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                            <SearchBar Placeholder="Search Exercises..." 
+                                       CancelButtonColor="White"
+                                       PlaceholderColor="White"
+                                       TextColor="White"
+                                       HorizontalTextAlignment="Center"
+                                       FontSize="Medium"
+                                       FontAttributes="Italic"
+                                       TextChanged="SearchBar_TextChanged" />
                         <StackLayout Padding="10" x:DataType="model:Item">
                             <Label Text="{Binding Text}"
                                 TextColor="White"
