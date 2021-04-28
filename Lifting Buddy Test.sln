@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifting Buddy Test.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifting Buddy Test.iOS", "Lifting Buddy Test\Lifting Buddy Test.iOS\Lifting Buddy Test.iOS.csproj", "{17B1C01C-0EA6-4517-88D9-A113ACC66609}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifting Buddy Test", "Lifting Buddy Test\Lifting Buddy Test\Lifting Buddy Test.csproj", "{224332FE-B15A-400C-8E22-9DF32331B3B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lifting Buddy Test", "Lifting Buddy Test\Lifting Buddy Test\Lifting Buddy Test.csproj", "{224332FE-B15A-400C-8E22-9DF32331B3B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

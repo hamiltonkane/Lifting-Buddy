@@ -6,9 +6,6 @@
 
     <StackLayout BackgroundColor="#000000" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
         <StackLayout Spacing="20" Padding="15">
-            <ContentView Padding="0,0,0,0" VerticalOptions="FillAndExpand">
-                <Image Source="{Binding Pic}" VerticalOptions="Center" HeightRequest="60" />
-            </ContentView>
             <Label Text="{Binding Text}"
                TextColor="White"
                FontSize="Small"/>
