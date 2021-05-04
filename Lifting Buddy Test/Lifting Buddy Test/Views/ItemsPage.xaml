@@ -15,13 +15,8 @@
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
     <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="ItemsListView"
-                ItemsSource="{Binding Items}"
-                SelectionMode="None">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="#000000" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-                        <SearchBar Placeholder="Search Exercises..." 
+        <StackLayout BackgroundColor="#000000" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <SearchBar Placeholder="Search Exercises..." 
                                        CancelButtonColor="White"
                                        PlaceholderColor="White"
                                        TextColor="White"
@@ -29,6 +24,11 @@
                                        FontSize="Medium"
                                        FontAttributes="Italic"
                                        TextChanged="SearchBar_TextChanged" />
+            <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
                         <StackLayout Padding="10" x:DataType="model:Item">
                             <Label Text="{Binding Text}"
                                 TextColor="White"
@@ -49,9 +49,9 @@
                                 </TapGestureRecognizer>
                             </StackLayout.GestureRecognizers>
                         </StackLayout>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
     </RefreshView>
 </ContentPage>

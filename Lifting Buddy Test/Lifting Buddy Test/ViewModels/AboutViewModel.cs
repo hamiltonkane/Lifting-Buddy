@@ -9,7 +9,7 @@ namespace Lifting_Buddy_Test.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "Gallery";
+            Title = "Welcome";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamain-quickstart"));
         }
 
